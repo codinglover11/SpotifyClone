@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+
+
+    .container{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    } 
+ h4{
+    margin-top: 120px;
+    margin-left: -150px;
+}
+#left-bg{
+    margin: 0px 20px;
+      height: 35px;
+    border-radius: 30%;
+    width: 100px;}
+#right-bg{
+          height: 35px;
+    border-radius: 30%;
+    width: 100px;} 
+    
+
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button id="left-bg">button-1</button>
+        <button id="right-bg">button-2</button>
+        <h4>Copy Your Code</h4>
+        <p id="para"></p>
+    </div>
+<div class="copy_code">
+background-image:linear gradient(to right,rgb(92,102,202),rgb(12,34,213));
+</div>
+    <script>
+let div1=document.getElementById("left-bg");
+let div2=document.getElementById("right-bg");
+let cpy=document.querySelector(".copy_code");
+
+
+hexclr=()=>{
+    let clr="#";
+let myhexvalue= "0123456789abcdef";
+for(let i=0;i<6;i++){
+clr=clr+(Math.floor(Math.random()*16));
+}
+return clr;
+}
+
+handlebutt=()=>{
+let rgb1=  hexclr();
+console.log(rgb1);
+document.body.style.backgroundImage=`linear-gradient(to right,${rgb1},#444)`;
+cpy.innerHTML=`backgroundImag:linear-gradient(to right,${rgb1},#000)`;
+div1.innerText=rgb1;
+div1.style.backgroundColor=rgb1;
+}
+handlebutt2=()=>{
+let rgb2=  hexclr();
+console.log(rgb2);
+document.body.style.backgroundImage=`linear-gradient(to right,#000,${rgb2})`;
+cpy.innerHTML=`backgroundImag:linear-gradient(to right,#000,${rgb2})`;
+div2.innerText=rgb2;
+div2.style.backgroundColor=rgb2;
+}
+div1.addEventListener("click",handlebutt);
+div2.addEventListener("click",handlebutt2);
+    </script>
+</body>
+</html>

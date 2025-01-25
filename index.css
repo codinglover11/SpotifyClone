@@ -1,0 +1,409 @@
+*{
+    background-color: black;
+    color: white;
+}
+body{
+    overflow: hidden;
+}
+.input-group i{
+    top: 1rem;
+}
+.main{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    /* gap: 0.5rem; */
+}
+.sidebar{
+    background-color: #121212;
+    width: 440px;
+    overflow: auto;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    margin: 5px;
+}
+.lib{
+    color: white;
+display: flex;
+
+opacity: 0.6;
+background-color: #121212;
+}
+.lib :hover{
+   
+opacity:0.9;
+}
+.lib i{
+    margin: 0.6rem 0rem 0rem 0.3rem;
+    background-color: #121212;
+}
+.lib p{
+    margin: 0.5rem 0rem 0rem 0.5rem;
+    background-color: #121212;
+    font-size: 1rem;
+}
+.icon i{
+    position: absolute;
+left: 25rem;
+margin-top: 0.9rem;
+background-color: #121212;
+}
+.move{
+    background-color: #121212;
+    overflow-y: scroll;
+   height: 250px;
+}
+.Create-first{
+    background-color: #12121203;
+    color: white;
+    margin-top: 3rem;
+   
+}
+
+.Create-first-text{
+margin: 0.3rem 0.5rem;
+border-radius: 1rem;
+-webkit-border-radius: 1rem;
+-moz-border-radius: 1rem;
+-ms-border-radius: 1rem;
+-o-border-radius: 1rem;
+}
+.Create-first-text h6 {
+  padding-top: 1rem;
+    margin-left:  0.7rem;
+
+}
+.Create-first-text p {
+    margin-left:0.7rem;
+
+}
+.Create-first-text button{ background-color: white; color: black; margin: 0.7rem; border-radius: 500px; -webkit-border-radius: 500px; -moz-border-radius: 500px; -ms-border-radius: 500px; -o-border-radius: 500px;
+}
+.Podcast{
+    background-color: #12121203;
+    color: white;
+    margin-top: 1rem;
+}
+.Create-first-Podcasr{
+    margin: 0.3rem 0.5rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.Create-first-Podcasr h6 {
+    padding-top: 1rem;
+      margin-left:  0.7rem;
+  
+  }
+  .Create-first-Podcasr p {
+      margin-left:0.7rem;
+  
+  }
+  .Create-first-Podcasr button{ background-color: white; color: black; margin: 0.7rem; border-radius: 500px; -webkit-border-radius: 500px; -moz-border-radius: 500px; -ms-border-radius: 500px; -o-border-radius: 500px;
+  }
+.foooter{
+  
+    color: white;
+    font-size: smaller;
+  
+}
+.row-1{
+    width: 440px;
+    position: absolute;
+  left:5px;
+  top: 350px;
+  z-index: 0;
+    background-color:#121212;
+    margin: 2rem 0rem;
+
+}
+.row-1 ul {
+    background-color:#121212;
+  display: flex; 
+  gap: 0.9rem;
+  list-style: none;
+  opacity: 0.6;
+}
+.row-1 ul li {
+    background-color:#121212;
+ 
+}
+.row-1 a{
+    background-color:#121212;
+    color: white;
+    text-decoration: none;
+    opacity: 0.9;
+}
+.row-1 a :hover{
+    background-color:#121212;
+    text-decoration: underline;
+   
+}
+.row-1 button{
+    border: 1ps solid white;
+    background-color:#121212;
+    color: white;
+    margin: 0.9rem 1.5rem;
+    width: 70px;
+    height: 40px;
+    border-radius:500px ;
+    -webkit-border-radius:500px ;
+    -moz-border-radius:500px ;
+    -ms-border-radius:500px ;
+    -o-border-radius:500px ;
+}
+
+
+.main-content{
+    margin: 2px;
+    background-color:black;
+    flex: 1;
+    overflow: auto;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.speciality{
+    text-transform: capitalize;
+    padding:0.5rem 0.2rem 0rem 0.2rem ;
+ padding-top: 0.5rem;
+    display: flex;
+    color: white;
+justify-content: space-between;
+background-color:black;}
+.speciality a{
+  text-decoration: none;
+ color: white;
+ 
+}
+.card-1{
+    background-color:black;
+
+}
+
+.card-1 img{
+   
+    border-radius:500px ;
+    -webkit-border-radius:500px ;
+    -moz-border-radius:500px ;
+    -ms-border-radius:500px ;
+    -o-border-radius:500px ;
+    width: 150px;
+    height: 150px;
+}
+.card-1 li{
+    position: relative;
+}
+.card-1 li:hover {
+    background-color:#242323;
+  }
+  .card-1 li:hover::after{
+    position: absolute;
+    content :url(play_musicbar.png);
+    width: 20px;
+    height: 15;
+    z-index: 1;
+  top: 0px;
+  left: 0px;
+  margin: 95px 0px 0px 60px;
+  }
+
+.card-1 li:hover h5,
+.card-1 li:hover p {
+    background-color: inherit; /* or specify the same color if needed */
+}
+.card-1 ul{
+    color: white;
+    gap: 15px;
+    display: flex;
+}
+
+
+.card-2{
+    background-color:black;
+
+}
+
+.card-2 img{
+/*    
+    border-radius:500px ;
+    -webkit-border-radius:500px ;
+    -moz-border-radius:500px ;
+    -ms-border-radius:500px ;
+    -o-border-radius:500px ; */
+    width: 150px;
+    height: 150px;
+}
+.card-2 li{
+    position: relative;
+}
+.card-2 li:hover {
+    background-color:#242323;
+  }
+  .card-2 li:hover::after{
+    position: absolute;
+    content :url(play_musicbar.png);
+    width: 20px;
+    height: 15;
+    z-index: 1;
+  top: 0px;
+  left: 0px;
+  margin: 95px 0px 0px 60px;
+  }
+
+.card-2 li:hover h5,
+.card-2 li:hover p {
+    background-color: inherit; /* or specify the same color if needed */
+}
+.card-2 ul{
+    color: white;
+    gap: 15px;
+    display: flex;
+}
+
+.card-3{
+    background-color:black;
+
+}
+
+.card-3 img{
+   
+    /* border-radius:500px ;
+    -webkit-border-radius:500px ;
+    -moz-border-radius:500px ;
+    -ms-border-radius:500px ;
+    -o-border-radius:500px ; */
+    width: 150px;
+    height: 150px;
+}
+.card-3 li{
+    position: relative;
+}
+.card-3 li:hover {
+    background-color:#242323;
+  }
+  .card-3 li:hover::after{
+    position: absolute;
+    content :url(play_musicbar.png);
+    width: 20px;
+    height: 15;
+    z-index: 1;
+  top: 0px;
+  left: 0px;
+  margin: 95px 0px 0px 60px;
+  }
+
+.card-3 li:hover h5,
+.card-3 li:hover p {
+    background-color: inherit; /* or specify the same color if needed */
+}
+.card-3 ul{
+    color: white;
+    gap: 15px;
+    display: flex;
+}
+.card-4{
+    background-color:black;
+
+}
+
+.card-4 img{
+   
+    /* border-radius:500px ;
+    -webkit-border-radius:500px ;
+    -moz-border-radius:500px ;
+    -ms-border-radius:500px ;
+    -o-border-radius:500px ; */
+    width: 150px;
+    height: 150px;
+}
+.card-4 li{
+    position: relative;
+}
+.card-4 li:hover {
+    background-color:#242323;
+  }
+  .card-4 li:hover::after{
+    position: absolute;
+    content :url(play_musicbar.png);
+    width: 20px;
+    height: 15;
+    z-index: 1;
+  top: 0px;
+  left: 0px;
+  margin: 95px 0px 0px 60px;
+  }
+
+.card-4 li:hover h5,
+.card-4 li:hover p {
+    background-color: inherit; /* or specify the same color if needed */
+}
+.card-4 ul{
+    color: white;
+    gap: 15px;
+    display: flex;
+}
+
+.card-5{
+    background-color:black;
+
+}
+
+.card-5 img{
+   
+    /* border-radius:500px ;
+    -webkit-border-radius:500px ;
+    -moz-border-radius:500px ;
+    -ms-border-radius:500px ;
+    -o-border-radius:500px ; */
+    width: 150px;
+    height: 150px;
+}
+.card-5 li{
+    position: relative;
+}
+.card-5 li:hover {
+    background-color:#242323;
+  }
+  .card-5 li:hover::after{
+    position: absolute;
+    content :url(play_musicbar.png);
+    width: 20px;
+    height: 15;
+    z-index: 1;
+  top: 0px;
+  left: 0px;
+  margin: 95px 0px 0px 60px;
+  }
+
+.card-5 li:hover h5,
+.card-5 li:hover p {
+    background-color: inherit; /* or specify the same color if needed */
+}
+.card-5 ul{
+    color: white;
+    gap: 15px;
+    display: flex;
+}
+.list{
+   margin: 80px 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+.list ul{
+    list-style: none;
+   
+}
+.list1 li{
+    right: 20px;
+    display: flex;
+    justify-content: start;
+}
